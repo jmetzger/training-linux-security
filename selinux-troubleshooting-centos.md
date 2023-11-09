@@ -34,7 +34,7 @@ sealert -a audit.log > report.txt
 
 ## Step 3 - possibility 1: Adjust ports/files with semanage command 
 # Example 
-semanage port -a -t http_port 
+semanage port -a -t http_port -p tcp 82
 semanage port -l | grep http_port 
 
 ## Step 3 - possibility 2: A boolean exists 
